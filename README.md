@@ -19,3 +19,7 @@ Shopify website template is an online shopping website with the functionality of
 ## Important JS functions and methods:
 
 * Local Storage: (https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage).
+
+## Project Preview:
+
+(https://ali-tahir4024.github.io/shopify/)
