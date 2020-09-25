@@ -1,0 +1,441 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  letter-spacing: 1px;
+  transition: all 0.5s;
+  color: inherit;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.99fr;
+  grid-template-rows: 15vh repeat(3, 80vh) 15vh;
+  align-content: space-around;
+  justify-content: space-evenly;
+}
+
+section > nav {
+  display: grid;
+  grid-template-columns: 15vw 50vw;
+  grid-template-rows: 0.8fr;
+  align-content: space-around;
+  justify-content: space-around;
+  background-color: whitesmoke;
+}
+
+section > nav > span {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: bold;
+  font-size: 2rem;
+  color: grey;
+  text-transform: capitalize;
+}
+
+section > nav > span > a > i {
+  color: #323232;
+}
+
+section > nav > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+section > nav > ul > li {
+  position: relative;
+}
+
+section > nav > ul > li > a {
+  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  color: grey;
+}
+
+section > nav > ul > li > a > i {
+  color: #323232;
+  font-size: 2rem;
+}
+
+.cart-icon{
+  display: none;
+}
+
+.items-count {
+  position: absolute;
+  padding: 5px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-radius: 30px;
+  top: -40%;
+}
+
+.furniture-side {
+  background-image: url("../assests/m9-s1.jpg");
+  background-size: 100% 100%;
+  display: grid;
+  align-content: space-around;
+  justify-content: space-evenly;
+}
+
+.furniture-side > span {
+  font-size: 8rem;
+  color: white;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+  padding-right: 200px;
+  line-height: 150px;
+  padding-top: 50px;
+}
+
+.furniture-side > button {
+  height: 8.5vh;
+  width: 13vw;
+  background-color: transparent;
+  border: 1.5px solid white;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.furniture-side > button > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.furniture-side > button:hover {
+  transition: all 0.5s;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.furniture-side > button > a > i {
+  font-size: 1.8rem;
+}
+
+.men-women-side {
+  position: relative;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.men-women-side > img {
+  height: 100%;
+  width: 50%;
+}
+
+.men,
+.women {
+  position: absolute;
+  font-size: 8rem;
+  color: white;
+  letter-spacing: 1.5px;
+}
+
+.men {
+  top: 10%;
+  left: 32%;
+}
+
+.women {
+  top: 35%;
+  left: 44%;
+}
+
+.men-women-side > button {
+  position: absolute;
+  bottom: 15%;
+  height: 8.5vh;
+  width: 13vw;
+  background-color: transparent;
+  border: 1.5px solid white;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.men-women-side > button > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.men-women-side > button:hover {
+  transition: all 0.5s;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.men-women-side > button > a > i {
+  font-size: 1.8rem;
+}
+
+.fruits-side {
+  background-image: url("../assests/62.jpg");
+  background-size: 100% 100%;
+  display: grid;
+  align-content: space-around;
+  justify-content: space-evenly;
+}
+
+.fruits-side > span {
+  font-weight: bold;
+  font-size: 8rem;
+  color: white;
+  text-transform: capitalize;
+  padding-top: 80px;
+}
+
+.fruits-side > button {
+  height: 8.5vh;
+  width: 13vw;
+  background-color: transparent;
+  border: 1.5px solid white;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  letter-spacing: 1px;
+  justify-self: center;
+  margin-bottom: 30px;
+}
+
+.fruits-side > button > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.fruits-side > button:hover {
+  transition: all 0.5s;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.fruits-side > button > a > i {
+  font-size: 1.8rem;
+}
+
+section > footer {
+  display: grid;
+  grid-template-columns: 13vw 50vw;
+  grid-template-rows: 0.8fr;
+  align-content: space-around;
+  justify-content: space-around;
+  background-color: whitesmoke;
+}
+
+section > footer > span {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: grey;
+}
+
+section > footer > span > a > i {
+  color: #323232;
+  font-size: 1.8rem;
+}
+
+section > footer > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+section > footer > ul > li {
+  border: 1px solid #323232;
+  padding: 15px;
+  border-radius: 50px;
+  background-color: transparent;
+  transition: all 0.5s;
+  position: relative;
+}
+
+section > footer > ul > li:hover {
+  background-color: #323232;
+  border: none;
+}
+
+section > footer > ul > li > a {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: grey;
+}
+
+section > footer > ul > li:hover a {
+  color: white;
+  transition: all 0.5s;
+}
+
+section > footer > ul > li:nth-last-child(1) {
+  border: none;
+  pointer-events: none;
+}
+
+.bottom-items-count {
+  position: absolute;
+  padding: 5px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-radius: 30px;
+  bottom: 40%;
+}
+
+.cart {
+  position: fixed;
+  height: 98.5%;
+  width: 25vw;
+  background-color: whitesmoke;
+  top: 0.5%;
+  right: 0.5%;
+  display: grid;
+  grid-template-columns: 0.95fr;
+  grid-template-rows: 10vh 60vh 10vh;
+  align-content: space-around;
+  justify-content: space-evenly;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -9;
+  transition: all 0.5s;
+}
+
+.cart > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cart > header > span {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: grey;
+  text-transform: capitalize;
+}
+
+.cart > header > span > a > i {
+  color: #323232;
+}
+
+.exit > i {
+  font-size: 2rem;
+  color: #323232;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.cart > main {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5vh 1fr;
+  align-content: space-around;
+  justify-content: space-evenly;
+  transition: all 0.5s;
+}
+
+.cart > main > ol {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cart > main > ol > li {
+  font-weight: lighter;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 0px 21px;
+  color: grey;
+}
+
+.cart > main > section {
+  overflow: scroll;
+  transition: all 0.5s;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-content: space-around;
+  justify-content: space-evenly;
+}
+
+.cart > main > section > ul > li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5vh;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.cart > footer {
+  display: grid;
+  grid-template-columns: 0.9fr;
+  grid-template-rows: 0.9fr;
+  align-content: space-around;
+  justify-content: space-evenly;
+}
+
+.cart > footer > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.cart > footer > ul > li {
+  background-color: #323232;
+  border-radius: 50px;
+  padding: 13px;
+  transition: all 0.5s;
+}
+
+.cart > footer > ul > li:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.cart > footer > ul > li > a > i {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.5s;
+}
+
+.cart > footer > ul > li:hover i {
+  color: #323232;
+}

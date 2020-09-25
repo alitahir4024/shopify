@@ -1,0 +1,187 @@
+@media (min-width: 0px) and (max-width: 425px) {
+  section > nav {
+    grid-template-columns: auto 13vw;
+  }
+
+  section > nav > ul {
+    display: none;
+  }
+
+  .cart-icon {
+    color: #323232;
+    font-size: 1.3rem;
+  }
+
+  .furniture-side,
+  .fruits-side {
+    background-size: auto;
+    background-position: center;
+  }
+
+  .furniture-side > span {
+    font-size: 3.5rem;
+    letter-spacing: 1.5px;
+    padding-right: 0px;
+    line-height: 70px;
+    padding-top: 0px;
+    margin-top: 10vh;
+  }
+
+  .furniture-side > button {
+    height: 10vh;
+    width: 53vw;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 5vh;
+  }
+
+  .men,
+  .women {
+    font-size: 3.6rem;
+    letter-spacing: 1.5px;
+  }
+
+  .men {
+    top: 10%;
+    left: 35%;
+  }
+
+  .women {
+    top: 30%;
+    left: 23%;
+  }
+
+  .men-women-side > button {
+    bottom: 15vh;
+    height: 10vh;
+    width: 53vw;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-left: 10px;
+  }
+
+  .fruits-side > span {
+    font-size: 3.3rem;
+    padding-top: 80px;
+  }
+
+  .fruits-side > button {
+    height: 10vh;
+    width: 53vw;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+  }
+
+  section > footer {
+    grid-template-columns: 0.99fr;
+  }
+
+  section > footer > ul > li {
+    padding: 10px 15px;
+    border-radius: 50px;
+  }
+
+  section > footer > span,
+  section > footer > ul > li:nth-last-child(1) {
+    display: none;
+  }
+
+  .cart {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    transform: scale(0.9);
+  }
+
+  .cart > main > ol > li:nth-child(1) {
+    padding: 0px 12px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 1023px) {
+  section > nav {
+    grid-template-columns: auto 60vw;
+  }
+
+  section > nav > span {
+    font-size: 1.6rem;
+  }
+
+  section > nav > ul > li > a {
+    font-size: 1.1rem;
+  }
+
+  .furniture-side,
+  .fruits-side {
+    background-size: auto;
+    background-position: center;
+  }
+
+  .furniture-side > span {
+    font-size: 4rem;
+    letter-spacing: 1.5px;
+    line-height: 80px;
+    padding-top: 0px;
+    margin-top: 10vh;
+  }
+
+  .furniture-side > button {
+    height: 10vh;
+    width: 25vw;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 5vh;
+  }
+
+  .men,
+  .women {
+    font-size: 4rem;
+    letter-spacing: 1.5px;
+  }
+
+  .men-women-side > button {
+    bottom: 15vh;
+    height: 10vh;
+    width: 25vw;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-left: 10px;
+  }
+
+  .fruits-side > span {
+    font-size: 4rem;
+    padding-top: 80px;
+  }
+
+  .fruits-side > button {
+    height: 10vh;
+    width: 25vw;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+  }
+
+  .cart {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    transform: scale(0.9);
+  }
+
+  .cart > main > ol > li:nth-child(1) {
+    padding: 0px 12px;
+  }
+
+  section > footer {
+    grid-template-columns: auto 60vw;
+  }
+
+  section > footer > ul > li {
+    padding: 10px 15px;
+  }
+}

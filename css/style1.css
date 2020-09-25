@@ -1,0 +1,542 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  letter-spacing: 1px;
+  transition: all 0.5s;
+  color: inherit;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.99fr;
+  grid-template-rows: 15vh 120vh 15vh;
+  align-content: space-around;
+  justify-content: space-evenly;
+  transition: all 0.5s;
+}
+
+section > nav {
+  display: grid;
+  grid-template-columns: 15vw 50vw;
+  grid-template-rows: 0.8fr;
+  align-content: space-around;
+  justify-content: space-around;
+  background-color: whitesmoke;
+}
+
+section > nav > span {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: bold;
+  font-size: 2rem;
+  color: grey;
+  text-transform: capitalize;
+}
+
+section > nav > span > a > i {
+  color: #323232;
+}
+
+section > nav > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+section > nav > ul > li {
+  position: relative;
+}
+
+section > nav > ul > li > a {
+  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  color: grey;
+}
+
+section > nav > ul > li > a > i {
+  color: #323232;
+  font-size: 2rem;
+}
+
+.items-count {
+  position: absolute;
+  padding: 5px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-radius: 30px;
+  top: -40%;
+}
+
+.cart-icon {
+  display: none;
+}
+
+section > main {
+  display: grid;
+  grid-template-columns: repeat(2, 25vw);
+  grid-template-rows: repeat(2, 50vh);
+  align-content: space-around;
+  justify-content: space-evenly;
+}
+
+.items {
+  border-radius: 5px;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.item-1 {
+  background-image: url("../assests/furniture-img/cabinet-contemporary-cups-decoration-279618.jpg");
+  background-size: 100% 100%;
+  transition: all 0.5s;
+}
+
+.item-1::after {
+  content: "Wooden Boxes";
+  position: absolute;
+  bottom: -13.5%;
+  left: 0;
+  font-weight: bold;
+  font-size: 1.75rem;
+  color: #323232;
+}
+
+.item-1::before {
+  content: "Add To Cart";
+  position: absolute;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  left: 27%;
+  top: 45%;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+  border: 2px solid white;
+}
+
+.item-1:hover::before {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s;
+}
+
+.item-1:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../assests/furniture-img/cabinet-contemporary-cups-decoration-279618.jpg");
+  cursor: pointer;
+}
+
+.item-2 {
+  background-image: url("../assests/furniture-img/orbicular-plant-on-desk-2249959.jpg");
+  background-size: 100% 100%;
+  transition: all 0.5s;
+}
+
+.item-2::after {
+  content: "Wooden Pods";
+  position: absolute;
+  bottom: -13.5%;
+  left: 0;
+  font-weight: bold;
+  font-size: 1.75rem;
+  color: #323232;
+}
+
+.item-2::before {
+  content: "Add To Cart";
+  position: absolute;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  left: 27%;
+  top: 45%;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+  border: 2px solid white;
+}
+
+.item-2:hover::before {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s;
+}
+
+.item-2:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../assests/furniture-img/orbicular-plant-on-desk-2249959.jpg");
+  cursor: pointer;
+}
+
+.item-3 {
+  background-image: url("../assests/furniture-img/green-wooden-chair-on-white-surface-963486.jpg");
+  background-size: 100% 100%;
+  transition: all 0.5s;
+}
+
+.item-3::after {
+  content: "Wooden Chairs";
+  position: absolute;
+  bottom: -13.5%;
+  left: 0;
+  font-weight: bold;
+  font-size: 1.75rem;
+  color: #323232;
+}
+
+.item-3::before {
+  content: "Add To Cart";
+  position: absolute;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  left: 27%;
+  top: 45%;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+  border: 2px solid white;
+}
+
+.item-3:hover::before {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s;
+}
+
+.item-3:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../assests/furniture-img/green-wooden-chair-on-white-surface-963486.jpg");
+  cursor: pointer;
+}
+
+.item-4 {
+  background-image: url("../assests/furniture-img/beige-and-black-chair-in-front-of-white-desk-509922.jpg");
+  background-size: 100% 100%;
+  transition: all 0.5s;
+}
+
+.item-4::after {
+  content: "Wooden Tables";
+  position: absolute;
+  bottom: -13.5%;
+  left: 0;
+  font-weight: bold;
+  font-size: 1.75rem;
+  color: #323232;
+}
+
+.item-4::before {
+  content: "Add To Cart";
+  position: absolute;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  left: 27%;
+  top: 45%;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+  border: 2px solid white;
+}
+
+.item-4:hover::before {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s;
+}
+
+.item-4:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../assests/furniture-img/beige-and-black-chair-in-front-of-white-desk-509922.jpg");
+  cursor: pointer;
+}
+
+@media (min-width: 0px) and (max-width: 425px) {
+  section {
+    grid-template-rows: 15vh 250vh 15vh;
+  }
+
+  section > main {
+    grid-template-columns: repeat(1, 85vw);
+    grid-template-rows: repeat(4, 50vh);
+  }
+
+  .item-1::before,
+  .item-2::before,
+  .item-3::before,
+  .item-4::before {
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    left: 20%;
+    top: 43%;
+  }
+
+  .item-1::after,
+  .item-2::after,
+  .item-3::after,
+  .item-4::after {
+    bottom: -18%;
+    font-size: 1.5rem;
+  }
+
+  .item-4 {
+    margin-bottom: 10%;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 1023px) {
+  section {
+    grid-template-rows: 15vh 140vh 15vh;
+  }
+
+  section > main {
+    grid-template-columns: repeat(2, 35vw);
+    grid-template-rows: repeat(2, 50vh);
+  }
+
+  .item-1::before,
+  .item-2::before,
+  .item-3::before,
+  .item-4::before {
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    left: 20%;
+    top: 43%;
+  }
+
+  .item-1::after,
+  .item-2::after,
+  .item-3::after,
+  .item-4::after {
+    bottom: -18%;
+    font-size: 1.5rem;
+  }
+}
+
+section > footer {
+  display: grid;
+  grid-template-columns: 13vw 50vw;
+  grid-template-rows: 0.8fr;
+  align-content: space-around;
+  justify-content: space-around;
+  background-color: whitesmoke;
+}
+
+section > footer > span {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: grey;
+}
+
+section > footer > span > a > i {
+  color: #323232;
+  font-size: 1.8rem;
+}
+
+section > footer > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+section > footer > ul > li {
+  border: 1px solid #323232;
+  padding: 15px;
+  border-radius: 50px;
+  background-color: transparent;
+  transition: all 0.5s;
+  position: relative;
+}
+
+section > footer > ul > li:hover {
+  background-color: #323232;
+  border: none;
+}
+
+section > footer > ul > li > a {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: grey;
+}
+
+section > footer > ul > li:hover a {
+  color: white;
+  transition: all 0.5s;
+}
+
+section > footer > ul > li:nth-last-child(1) {
+  border: none;
+  pointer-events: none;
+}
+
+.bottom-items-count {
+  position: absolute;
+  padding: 5px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-radius: 30px;
+  bottom: 40%;
+}
+
+.cart {
+  position: fixed;
+  height: 98.5%;
+  width: 25vw;
+  background-color: whitesmoke;
+  top: 0.5%;
+  right: 0.5%;
+  display: grid;
+  grid-template-columns: 0.95fr;
+  grid-template-rows: 10vh 60vh 10vh;
+  align-content: space-around;
+  justify-content: space-evenly;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -9;
+  transition: all 0.5s;
+}
+
+.cart > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cart > header > span {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: grey;
+  text-transform: capitalize;
+}
+
+.cart > header > span > a > i {
+  color: #323232;
+}
+
+.exit > i {
+  font-size: 2rem;
+  color: #323232;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.cart > main {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5vh 1fr;
+  align-content: space-around;
+  justify-content: space-evenly;
+  transition: all 0.5s;
+}
+
+.cart > main > ol {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cart > main > ol > li {
+  font-weight: lighter;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 0px 21px;
+  color: grey;
+}
+
+.cart > main > section {
+  overflow: scroll;
+  transition: all 0.5s;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-content: space-around;
+  justify-content: space-evenly;
+}
+
+.cart > main > section > ul > li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5vh;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.cart > footer {
+  display: grid;
+  grid-template-columns: 0.9fr;
+  grid-template-rows: 0.9fr;
+  align-content: space-around;
+  justify-content: space-evenly;
+}
+
+.cart > footer > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.cart > footer > ul > li {
+  background-color: #323232;
+  border-radius: 50px;
+  padding: 13px;
+  transition: all 0.5s;
+}
+
+.cart > footer > ul > li:hover {
+  background-color: transparent;
+}
+
+.cart > footer > ul > li > a > i {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.5s;
+}
+
+.cart > footer > ul > li:hover i {
+  color: #323232;
+}

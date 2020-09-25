@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture-Aisle</title>
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1ba2cf90f3.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./assests/Citycons_bag-512.webp" type="image/x-icon">
+</head>
+
+<body>
+
+    <section>
+
+        <nav>
+
+            <span><a href="index.html"><i class="fas fa-shopping-bag"></i> Shopify</a></span>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Sales</a></li>
+                <li><a href="">Contact</a></li>
+                <li><span onclick="openBucket()"><i class="fas fa-shopping-cart"></i></span>
+                    <span class="items-count"></span>
+                </li>
+
+            </ul>
+
+            <span onclick="openBucket()" class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+
+        </nav>
+
+        <main>
+
+            <div class="items item-1" data-item="Wooden Boxes" data-price="500"></div>
+
+            <div class="items item-2" data-item="Wooden Pods" data-price="1000"></div>
+
+            <div class="items item-3" data-item="Wooden Chairs" data-price="1500"></div>
+
+            <div class="items item-4" data-item="Wooden Tables" data-price="2000"></div>
+
+        </main>
+
+        <footer>
+
+            <span><a href=""><i class="fas fa-shopping-bag"></i> Shopify</a></span>
+
+            <ul>
+
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                <li><span><i class="fas fa-shopping-cart"></i></span>
+                    <span class="bottom-items-count"></span>
+                </li>
+
+            </ul>
+
+        </footer>
+
+        <div class="cart">
+
+            <header> <span><a href="index.html"><i class="fas fa-shopping-bag"></i> Shopify</a></span> <span
+                    class="exit"><i class="fas fa-times"></i></span> </header>
+
+            <main>
+
+                <ol>
+                    <li>Item-Name</li>
+                    <li>Qty</li>
+                    <li>Total</li>
+                </ol>
+
+                <section>
+
+                    <ul id="ul">
+                        
+                    </ul>
+
+                </section>
+
+            </main>
+
+            <footer>
+
+                <ul>
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+
+            </footer>
+
+        </div>
+
+    </section>
+
+     <script src="./js/script1.js"></script>
+
+</body>
+
+</html>
