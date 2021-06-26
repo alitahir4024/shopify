@@ -22,4 +22,4 @@ Shopify website template is an online shopping website with the functionality of
 
 ## Project Preview:
 
-(https://ali-tahir4024.github.io/shopify/)
+[Shopify Website](https://ali-tahir4024.github.io/shopify/)
